@@ -11,7 +11,120 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <!-- <h1>HTML Form</h1> -->
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+      <fieldset class="fieldset">
+        <legend>Personal information</legend>
+        <label class="label" for="surname">Surname:
+          <input 
+            name="txt-surname" type="text" 
+            id="surname" autocomplete="off" 
+            minlength="4" maxlength="24"
+          >
+        </label>
+        <label class="label" for="name">Name:
+          <input 
+            name="txt-name" type="text" 
+            id="name" autocomplete="off"
+          >
+        </label>
+        <label class="label" for="age">How old are You?
+          <input name="txt-age" id="age" 
+            type="number" min="1" 
+            max="100" value="12"
+          >
+        </label>
+        <label class="label" for="date">Full date of birth:
+          <input name="txt-age" 
+            id="date" type="date"
+          >
+        </label>
+        <label class="label" for="terms">I accept the term of the agreement
+          <input 
+            name="chk-terms" 
+            id="terms" 
+            type="checkbox"
+          >
+        </label>
+      </fieldset>
+      <fieldset class="fieldset">
+        <legend>Registration</legend>
+        <label class="label" for="txt-email">E-mail:
+          <input 
+            name="chk-terms" type="email" 
+            id="txt-email" 
+            placeholder="email@example.com" required
+          >
+        </label>
+        <label class="label" for="txt-pswrd">Password:
+          <input 
+            name="chk-terms" id="txt-pswrd" 
+            type="password" required
+          >
+        </label>
+      </fieldset>
+      <fieldset class="fieldset">
+        <legend>An interesting fact about you!</legend>
+        <label class="label" 
+          for="radio">Do you love cats?
+          <input name="radio" id="radio-y" 
+            type="radio" value="Y"
+          ><label for="radio-y" class="radio-label">Yes</label>
+          <input name="radio" id="radio-n" 
+            type="radio" value="N"
+          ><label for="radio-n" class="radio-label">No</label>
+        </label>
+        <label class="label" for="color">What is your favorite color?
+          <input 
+            name="color" 
+            id="color" 
+            type="color"
+          >
+        </label>
+        <label class="label" for="time-to-bed">What time do you go to bed?
+          <input name="color" 
+            id="time-to-bed" type="time"
+          >
+        </label>
+        <label class="label" for="select">What are your favorite brand of cars?
+          <select name="select-brand" 
+            id="select" multiple>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>          
+        </label>
+        <label class="label" for="range">How do you rate our work?
+          <input  
+            class="form-field" 
+            type="range" 
+            name="range"  
+            id="range" 
+            value="0"
+            min="0"
+            max="10"
+          >
+        </label>
+      </fieldset>
+      <fieldset class="fieldset">
+        <legend>Additional info</legend>
+        <label class="label" for="textarea">Comments:
+          <textarea 
+            name="textarea" id="textarea" 
+            cols="30" rows="2">
+          </textarea>
+        </label>
+        <label class="label" for="recommend">Would you recommend us?
+          <select 
+            name="select-recommend" 
+            id="recommend" required>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+          </select>  
+        </label>
+      </fieldset>
+      <button name="btn-submit" type="submit">Submit</button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
