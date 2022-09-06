@@ -5,10 +5,10 @@ html {
 
 .label {
   display: block;
-  margin: 0 0 10px;
+  margin-bottom: 10px;
 }
 
 .fieldset {
-  margin: 0 2px 20px;
+  margin-bottom: 20px;
   padding-bottom: 0;
 }
